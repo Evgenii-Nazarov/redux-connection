@@ -3,7 +3,7 @@ import axios from "axios";
 
 export function getNewList() {
     return (dispatch) => {
-        axios.get('http://localhost:5000/todo')
+        axios.get('https://nazarov-kanban-server.herokuapp.com/card')
             .then(res => {
                 dispatch({
                     type: 'GET_TODO_LIST',
